@@ -23,25 +23,25 @@ spec:
             - name: MYSQL_HOST
               valueFrom:
                 configMapKeyRef:
-                  name: special-config
+                  name:limesurvey-config
                   key: MYSQL_HOST
             - name: MYSQL_HOST
               valueFrom:
                 configMapKeyRef:
-                  name: special-config
+                  name:limesurvey-config
                   key: MYSQL_HOST
             - name: MYSQL_HOST
               valueFrom:
                 configMapKeyRef:
-                  name: special-config
+                  name:limesurvey-config
                   key: MYSQL_HOST
             - name: MYSQL_HOST
               valueFrom:
                 configMapKeyRef:
-                  name: special-config
+                  name:limesurvey-config
                   key: MYSQL_HOST
             - name: MYSQL_HOST
               valueFrom:
                 configMapKeyRef:
-                  name: special-config
+                  name:limesurvey-config
                   key: MYSQL_HOST
