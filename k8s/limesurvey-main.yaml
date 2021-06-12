@@ -1,0 +1,47 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: limesurvey-apache
+  labels:
+    app: limesurvey-backend
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: limesurvey
+  template:
+    metadata:
+      labels:
+        app: limesurvey
+    spec:
+      containers:
+        - name: limesurvey-apache
+          image: -----
+          ports:
+            - containerPort: 8080
+          env:
+            - name: MYSQL_HOST
+              valueFrom:
+                configMapKeyRef:
+                  name: special-config
+                  key: MYSQL_HOST
+            - name: MYSQL_HOST
+              valueFrom:
+                configMapKeyRef:
+                  name: special-config
+                  key: MYSQL_HOST
+            - name: MYSQL_HOST
+              valueFrom:
+                configMapKeyRef:
+                  name: special-config
+                  key: MYSQL_HOST
+            - name: MYSQL_HOST
+              valueFrom:
+                configMapKeyRef:
+                  name: special-config
+                  key: MYSQL_HOST
+            - name: MYSQL_HOST
+              valueFrom:
+                configMapKeyRef:
+                  name: special-config
+                  key: MYSQL_HOST
